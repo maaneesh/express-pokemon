@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 5002;
 
-const pokemon = require("./models/pokemon")
+const pokemon = require("./models/pokemon");
 
 app.set("views", __dirname + "/views");
 app.set("view engine", "jsx");
@@ -15,12 +15,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/pokemon", (req, res) => {
-  res.render("Index",{
-    pokemons: pokemon
+  res.render("Index", {
+    pokemons: pokemon,
   });
 });
+
 app.get("/pokemon/:id", (req, res) => {
-  res.send(req.params.id);
+  res.render("Show", {
+    pokemon: pokemon[req.params.id],
+  })
 });
 
 app.listen(port, () => {
