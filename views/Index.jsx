@@ -14,11 +14,13 @@ function Index({ pokemons }) {
             <h1>See all the Pokemon!</h1>
 
             {pokemons.map((pokemon, i) => {
-                
+
                 const capitalFirst = pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1);
                 return (
                     <ul>
-                        <li style={pokemonStyle} key={i}>{capitalFirst}</li>
+                        <li><a href={`pokemon/${i}`} style={pokemonStyle} key={i}>{capitalFirst}</a>
+
+                        </li>
                     </ul>
 
                 )
