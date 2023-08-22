@@ -15,7 +15,8 @@ function Show({ pokemon }) {
       <h2> {capitalName}</h2>
       <img src={imageUrl} />
       <br/>
-      <a href='/pokemon'>Back</a>
+      <a href='/pokemon'>Back</a> <br/>
+      <a href='/pokemon/new'>Add New</a>
     </div>
   )
 
