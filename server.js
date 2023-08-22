@@ -36,6 +36,17 @@ app.get("/pokemon/new", (req, res) => {
   res.render("New");
 });
 
+//CREATE = POST
+
+app.post("/pokemon", (req, res) => {
+  console.log(req.body);
+
+  pokemon.push(req.body);
+  console.log("The pokemon array", pokemon);
+  res.redirect('/pokemon');
+});
+
+
 
 
 app.get("/pokemon/:id", (req, res) => {
