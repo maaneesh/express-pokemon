@@ -27,7 +27,7 @@ function Index({ pokemons }) {
             })
             }
 
-            <a href="/pokemon">Back</a> <br/>
+            <a href="/">Back</a> <br/>
             <a href='/pokemon/new'>Add New</a>
 
         </div>
