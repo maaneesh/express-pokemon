@@ -3,10 +3,10 @@ import pokemon from '../models/pokemon'
 
 
 
-function Show({ pokemon }) {
+function Show({ Pokemon }) {
 
-  const capitalName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1);
-  const imageUrl = pokemon.img + '.jpg';
+  const capitalName = Pokemon.name.charAt(0).toUpperCase() + Pokemon.name.substring(1);
+  const imageUrl = Pokemon.img + '.jpg';
 
 
   return (

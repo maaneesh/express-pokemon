@@ -18,7 +18,7 @@ function Index({ pokemons }) {
                 const capitalFirst = pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1);
                 return (
                     <ul>
-                        <li><a href={`pokemon/${i}`} style={pokemonStyle} key={i}>{capitalFirst}</a>
+                        <li key={i}><a href={`pokemon/${pokemon.id}`} style={pokemonStyle} >{capitalFirst}</a>
 
                         </li>
                     </ul>
